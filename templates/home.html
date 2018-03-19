@@ -1,1 +1,92 @@
-<b>TO BE FILLED !</b>
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>{% block title %}Project_Orphan{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/scrolling-nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mycss.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+  {% block stylesheet %} {% endblock %}    
+  </head>
+
+  <body id="page-top">
+    {% block body %}
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" style="background-color: #007af5">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{% static 'img/Project_Orphan_logo.png' %}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-white project-orphan-font" href="#">LogIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-white project-orphan-font" href="#">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary-color">
+      <div class="container">
+        <img class="center project-orphan-logo" src="{% static 'img/Center_image_logo.png' %}">
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container project-orphan-font">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="background-color: #007af5">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-white">
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Section 4</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-4 project-orphan-footer">
+      <div class="container">
+        <p class="m-0 text-center text-white">Project_Orphan Team</p>
+      </div>
+    </footer>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <script src="{% static 'js/scrolling-nav.js' %}"></script>
+    {% endblock body %}
+  </body>
+
+</html>
