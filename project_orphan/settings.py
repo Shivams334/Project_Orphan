@@ -1,3 +1,4 @@
+
 """
 Django settings for project_orphan project.
 
@@ -37,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
+    'orphan',
+    'widget_tweaks',
+
 ]
 
 MIDDLEWARE = [
