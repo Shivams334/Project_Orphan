@@ -1,0 +1,18 @@
+body {
+  background-image: url(/home/cyber_freak/Project_Orphan/static/img/cloudy-day.png
+);
+}
+
+.logo {
+  font-family: 'Peralta', cursive;
+}
+
+.logo a {
+  color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+  text-decoration: none;
+}
+

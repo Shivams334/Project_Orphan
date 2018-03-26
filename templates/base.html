@@ -20,16 +20,30 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
+              {% if user.is_authenticated %}
+              <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ user.username }}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+              <a class="dropdown-item" href="#">My account</a>
+              <a class="dropdown-item" href="#">Change password</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
+            </div>
+          </li>
+        </ul>
+        {% else %}
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger text-white" href="#">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger text-white" href="#">SignUp</a>
+                <a class="nav-link js-scroll-trigger text-white" href="{% url 'signup' %}">SignUp</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      {% endif %}
       {% block content %}
       {% endblock %}
 {% endblock body %}
