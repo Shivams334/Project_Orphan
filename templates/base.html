@@ -20,19 +20,6 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              {% if user.is_authenticated %}
-              <a class="nav-link dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ user.username }}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
-              <a class="dropdown-item" href="#">My account</a>
-              <a class="dropdown-item" href="#">Change password</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="{% url 'logout' %}">Log out</a>
-            </div>
-          </li>
-        </ul>
-        {% else %}
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger text-white" href="#">Login</a>
               </li>
@@ -43,16 +30,17 @@
           </div>
         </div>
       </nav>
-      {% endif %}
       {% block content %}
       {% endblock %}
-{% endblock body %}
+      {% endblock body %}
 
+{% block footer %}  
       <footer class="py-4 project-orphan-footer">
         <div class="container">
           <p class="m-0 text-center text-white">Project_Orphan Team</p>
         </div>
       </footer>
+{% endblock %}
           <script src="{% static 'js/jquery.min.js' %}"></script>
           <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
           <script src="{% static 'js/jquery.easing.min.js' %}"></script>
