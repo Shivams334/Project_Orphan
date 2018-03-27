@@ -1,3 +1,4 @@
+
 """
 Django settings for project_orphan project.
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'orphan',
     'accounts',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+LOGOUT_REDIRECT_URL = 'home'
