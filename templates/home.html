@@ -4,38 +4,66 @@
       <header class="bg-primary-color">
         <div class="container">
           <img class="center project-orphan-logo" src="{% static 'img/Center_image_logo.png' %}">
+          <center><h4 style="color: white">Web Application For Open-Source Contribution</h4></center>
+          <center><p style="color: white">An application to kick-start your contributions in Open-Source projects</p></center>
         </div>
       </header>
-        <section style="background-color: #FFFFFF">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>Section 2</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <section id="about" class="padding_section2">
+            <div class="container project-orphan-font">
+              <div class="row align_top">
+                <div class="col-md-6 mx-auto">
+                  <center><img src="{% static 'img/Upload_Project.png' %}" alt="" height="72" width="72" align="top"></center><br>
+                  <center><h4>Upload Project</h4></center>
+                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
+                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                          quis nostrud <br>exercitation ullamco labo</center>
+                  <center>
+                    <button class="button"  type="button" onclick="" href="#">Upload</button>
+                  </center>
+                </div>
+                <div class="col-md-6 mx-auto">
+                  <center><img src="{% static 'img/Adopt_Project.png' %}" alt="" height="72" width="72" align="top"></center><br>
+                  <center><h4>Adopt Project</h4></center>
+                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
+                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                          quis nostrud <br>exercitation ullamco labo</center>
+                  <center>
+                    <button class="button"  type="button" onclick="" href="#">Adopt</button>
+                  </center>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>  
+            </div>  
+        </section>       
 
-        <section style="background-color: #007af5">
+          <section class="bg-primary-color align_top_section">
             <div class="container" >
-            <div class="row">
-              <div class="col-lg-8 mx-auto text-white">
-                <h2>Section 3</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-white">
+                  <h2>Section 3</h2>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>  
+          </section>  
 
-        <section style="background-color: #FFFFFF">  
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <h2>Section 4</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <section id="contact" class="padding_section4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mx-auto">
+                  <center><h3>Maintainers</h3></center>
+                  <center><p style="color: #007af5">How can i get my project involved?</p></center>
+                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
+                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                          quis nostrud <br>exercitation ullamco labo</center> 
+                </div>
+                <div class="col-md-6 mx-auto">
+                  <center><h3>Contributors</h3></center>
+                  <center><p style="color: #007af5">How can i get started?</p></center>
+                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
+                  tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
+                  quis nostrud <br>exercitation ullamco labo</center> 
+                </div>
               </div>
             </div>
-          </div>
-        </section>  
+          </section>     
 {% endblock content %}

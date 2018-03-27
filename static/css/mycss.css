@@ -28,3 +28,32 @@
 	font-family: 'Roboto';
 	font-weight: bold;
 }
+
+.button {
+    background-color: #007af5;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21px;
+    margin: 15px 15px;
+    border-radius: 30px;
+}
+
+.align_top{
+	top:-120px;
+}
+
+.align_top_section{
+	top: -180px;
+}
+
+.padding_section4{
+	padding: 75px 100px 125px 100px;
+}
+
+.padding_section2{
+	padding: 100px 100px 75px 100px;
+}
