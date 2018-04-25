@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'orphan',
     'accounts',
-    'widget_tweaks'
+    'widget_tweaks',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [
