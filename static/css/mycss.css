@@ -61,3 +61,76 @@
 	padding: 100px 100px 75px 100px;
 }
 
+#projects{
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+#project_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#grid_div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Just for the fallback layout */
+  
+  main {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  article {
+    margin: 1rem 0;
+  }
+  
+  /* Now lets do a Grid-based layout */
+  
+  @supports (display: grid) {
+    main { 
+      max-width: 100000px;
+      margin: 0;
+    }
+    article {
+      margin: 0;
+      background-color: white;
+    }
+    .project {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 1rem;
+    }
+  }
+    
+  .project {
+    font-family: Avenir, Roboto, Helvetica, san-serif; 
+    font-size: 80%;
+  }
+  .project-item {
+    display: flex;
+    flex-flow: column;
+    border:  1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .project-item > h1 {
+    margin: 1rem 1rem 0;
+  }
+  .project-item > ul {
+    margin: 0 0 1rem;
+  }
+  .project-item > p {
+    margin: 0.25em 1rem 1rem;
+  }
+  .project-item > span {
+    margin-top: auto;
+    width:30%;
+  }
+  
