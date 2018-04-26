@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from accounts import views as accounts_views
-from orphan import views
+from orphan import views as orphan_views
 
 urlpatterns = [
     url(r'^signup/$', accounts_views.signup, name='signup'),
@@ -10,7 +10,7 @@ urlpatterns = [
         template_name='login.html'), name='login'
         ),
     url(r'^logout/$', auth_views.LogoutView.as_view(), name='logout'),
-    url(r'^$', views.home, name='home'),
+    url(r'^$', orphan_views.home, name='home'),
     url(r'^signup/$', accounts_views.signup, name='signup'),
     url(r'^reset/$',
         auth_views.PasswordResetView.as_view(
@@ -36,4 +36,6 @@ urlpatterns = [
     url(r'^settings/password/done/$', auth_views.PasswordChangeDoneView.as_view(template_name='password_change_done.html'),
         name='password_change_done'),
     url(r'^admin/', admin.site.urls),
+    url(r'^upload/', orphan_views.upload, name='upload'),
+    url(r'^settings/my_account/$', accounts_views.UserUpdateView.as_view(), name='my_account'),  
 ]
