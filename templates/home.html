@@ -14,33 +14,66 @@
                 <div class="col-md-6 mx-auto">
                   <center><img src="{% static 'img/Upload_Project.png' %}" alt="" height="72" width="72" align="top"></center><br>
                   <center><h4>Upload Project</h4></center>
-                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
-                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-                          quis nostrud <br>exercitation ullamco labo</center>
+                  <center>Looking for contributors to your project ?<br>You can upload your project here for a wide <br> variety of developers looking to get started<br> with any project.</center>
                   <center>
-                    <button class="button"  type="button" onclick="" href="#">Upload</button>
+                    <button class="button"  type="button">Upload</button>
                   </center>
                 </div>
                 <div class="col-md-6 mx-auto">
                   <center><img src="{% static 'img/Adopt_Project.png' %}" alt="" height="72" width="72" align="top"></center><br>
                   <center><h4>Adopt Project</h4></center>
-                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
-                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-                          quis nostrud <br>exercitation ullamco labo</center>
+                  <center>Take a look at the wide variety of projects<br> we have so you can get started on the project<br> of your skill set. Your just one click away to <br>adopt the project.
+                  </center>
                   <center>
-                    <button class="button"  type="button" onclick="" href="#">Adopt</button>
+                    <a href="{% url 'upload' %}"><button class="button"  type="button">Adopt</button></a>
                   </center>
                 </div>
               </div>
             </div>  
         </section>       
 
-          <section class="bg-primary-color align_top_section">
-            <div class="container" >
+          <section class="bg-primary-color align_top_section" id="project_section">
+            <div class="container-fluid" >
               <div class="row">
-                <div class="col-lg-8 mx-auto text-white">
-                  <h2>Section 3</h2>
-                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                <div class="col-lg-12 mx-auto" id="grid_div">
+                  <h1 id="projects">Projects</h1>
+                  <main class="project">
+                    <article class="project-item">
+                      <h3>Coala</h3><hr>
+                      <p>Coala provides a unified command-line interface for linting and fixing all your code, regardless of the programming languages you use.</p>
+                      <div>
+                        <span class="badge badge-pill badge-primary">C</span>
+                        <span class="badge badge-pill badge-primary">Python</span>
+                      </div>
+                    </article>
+                    
+                    <article class="project-item">
+                      <h3>Helpy</h3> <hr>
+                      <p>Helpy is a modern, "mobile-first" helpdesk application built in Ruby. Features include multi-lingual knowledgebase, community discussions and private tickets integrated with email.</p>
+                      <div>
+                        <span class="badge badge-pill badge-primary">C</span>
+                        <span class="badge badge-pill badge-primary">Python</span>
+                      </div>
+                    </article>
+                  
+                    <article class="project-item">
+                      <h3>Git-Learn</h3> <hr>
+                      <p>A repository to learn version control with features like push, pull, fork and clone repository</p>
+                      <div>
+                        <span class="badge badge-pill badge-primary">C</span>
+                        <span class="badge badge-pill badge-primary">Python</span>
+                      </div>
+                    </article>
+                  
+                    <article class="project-item">
+                      <h3>Dhwani</h3> <hr>
+                      <p>Dhwani is a smart assistant to help people, use their system efficiently who have difficulty in any sense.</p>
+                      <div>
+                        <span class="badge badge-pill badge-primary">C</span>
+                        <span class="badge badge-pill badge-primary">Python</span>
+                      </div>
+                    </article>
+                  </main>
                 </div>
               </div>
             </div>
@@ -51,17 +84,18 @@
               <div class="row">
                 <div class="col-md-6 mx-auto">
                   <center><h3>Maintainers</h3></center>
+                  </center> 
                   <center><p style="color: #007af5">How can i get my project involved?</p></center>
-                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
-                          tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-                          quis nostrud <br>exercitation ullamco labo</center> 
+                  <center>Being a project maintainer is awesome <br>
+                    but there are some guidelines to a project <br>must follow
+                  so it's easy for new contributors <br>to get started.
                 </div>
                 <div class="col-md-6 mx-auto">
                   <center><h3>Contributors</h3></center>
+                  <!-- This should be redirected to the mozilla page !-->
                   <center><p style="color: #007af5">How can i get started?</p></center>
-                  <center>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do <br>eiusmod
-                  tempor incididunt ut <br>labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-                  quis nostrud <br>exercitation ullamco labo</center> 
+                  <center>Contributting to a project has certain guide lines <br> that every contributor must followso you follow the same ideology <br>as the project maintainers.So it's healthy to follow the contribution guidelines of the project.
+                  </center> 
                 </div>
               </div>
             </div>

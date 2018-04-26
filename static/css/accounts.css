@@ -3,11 +3,11 @@ body {
 }
 
 .logo {
-  font-family: 'Peralta', cursive;
+  font-family: 'Roboto';
 }
 
 .logo a {
-  color: rgba(0,0,0,.9);
+  color: #ffffff;
 }
 
 .logo a:hover,
