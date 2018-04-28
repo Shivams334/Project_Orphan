@@ -1,4 +1,4 @@
-{% extends 'base_accounts.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
 <h2>Upload Project</h2>
@@ -23,7 +23,7 @@
             <center> <h3 class="card-title">Upload Project</h3></center>
             <form method="post" novalidate>
               {% csrf_token %}
-            {% include 'includes/form.html' %}
+               {% include 'includes/form.html' %}
               <button type="submit" class="btn btn-primary btn-block">Upload</button>
             </form>
           </div>
